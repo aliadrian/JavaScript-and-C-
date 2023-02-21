@@ -35,5 +35,4 @@ public class SumTest1
         Assert.AreEqual(1, s.GetSum(0, 1));
         Assert.AreEqual(-1, s.GetSum(0, -1));
     }
-
 }

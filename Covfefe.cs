@@ -51,6 +51,5 @@ namespace azarias
             Assert.AreEqual("covfefe covfefe", Solution.Covfefe("covfefe"));
             Assert.AreEqual(" covfefe", Solution.Covfefe(""));
         }
-
     }
 }

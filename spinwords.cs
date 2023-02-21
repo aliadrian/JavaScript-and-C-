@@ -1,4 +1,4 @@
-// my solution that didn't work
+// My solution that didn't work
 using System.Collections.Generic;
 using System.Linq;
 using System;
@@ -26,8 +26,7 @@ public class Kata
     //   }
 
 
-    // solution
-
+    // Solution
     public static string SpinWords(string sentence)
     {
         List<string> newWords = new List<string>();
