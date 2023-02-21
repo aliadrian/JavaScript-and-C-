@@ -33,8 +33,6 @@ function pigIt(str) {
     const firstLetter = word.substring(0, 1);
     const restOfWord = word.substring(1);
 
-    const conditions = ["?", "!"];
-
     if (word.includes("!") || word.includes("?")) {
       newString += restOfWord + firstLetter;
     } else {
