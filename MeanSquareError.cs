@@ -27,6 +27,16 @@ public class Kata
   }
 }
 
+// Shorter solution
+//var dist = 0.00;
+
+//for (var i = 0; i < firstArray.Length; i++)
+//{
+//	dist += Math.Pow(firstArray[i] - secondArray[i], 2);
+//}
+
+//return dist / firstArray.Length;
+
 namespace Solution
 {
   using NUnit.Framework;
