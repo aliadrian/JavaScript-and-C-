@@ -8,6 +8,7 @@ public class Number
     int sum = 0;
     foreach (char c in s)
     {
+      // This converts the char to an int
       int x = c - '0';
       sum += x;
     }
