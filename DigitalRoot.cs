@@ -1,4 +1,5 @@
 using NUnit.Framework;
+
 public class Number
 {
   public static int DigitalRoot(long n)
