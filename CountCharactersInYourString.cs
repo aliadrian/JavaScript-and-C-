@@ -50,7 +50,7 @@ public class Kata
 //     {
 //        if(dictionary.ContainsKey(c))
 //        {
-//           dic[c] += 1;
+//           dictionary[c] += 1;
 //        }
 //        else
 //        {
