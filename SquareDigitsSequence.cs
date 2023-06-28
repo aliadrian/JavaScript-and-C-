@@ -2,32 +2,32 @@ using System.Collections.Generic;
 
 namespace myjinxin
 {
-  using System;
+    using System;
   
-  public class Kata
-  {
-    public int SquareDigitsSequence(int a0){
-        
-    HashSet<int> set = new HashSet<int>();
-    int count = 1;
-
-    while (!set.Contains(a0))
+    public class Kata
     {
-      set.Add(a0);
-      int sum = 0;
-      while (a0 > 0)
-      {
-        int digit = a0 % 10;
-        sum += digit * digit;
-        a0 /= 10;
-      }
-      a0 = sum;
-      count++;
-    }
+      public int SquareDigitsSequence(int a0){
+          
+      HashSet<int> set = new HashSet<int>();
+      int count = 1;
 
-    return count;
+      while (!set.Contains(a0))
+      {
+        set.Add(a0);
+        int sum = 0;
+        while (a0 > 0)
+        {
+          int digit = a0 % 10;
+          sum += digit * digit;
+          a0 /= 10;
+        }
+        a0 = sum;
+        count++;
+      }
+
+      return count;
+    }
   }
-}
 }
 
 namespace myjinxin
