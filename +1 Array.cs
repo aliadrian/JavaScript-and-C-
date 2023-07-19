@@ -13,7 +13,7 @@ namespace Kata
       
       if (num.Length == 0 || list.Min() < 0 || list.Max() > 9)
       {
-          return null;
+        return null;
       }
 			else
 			{
