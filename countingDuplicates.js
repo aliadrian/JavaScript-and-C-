@@ -3,7 +3,7 @@
  *  Description of this parameter, which takes a string
  * @param {number} duplicateCount
  *  Description of this parameter, the number of characters that are repeated in 
-*   @param {string text}
+ * @param {string text}
  * @returns @param {number} duplicateCount
  
  * Examples
