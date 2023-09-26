@@ -6,34 +6,33 @@ public class Kata
     public static int Solve(string s)
     {
       string alphabet = "abcdefghijklmnopqrstuvwxyz";
-			Dictionary<char, int> letterValues = new Dictionary<char, int>();
-
-			for (int i = 0; i < 26; i++)
-			{
-				char c = alphabet[i];
-				letterValues[c] = i + 1;
-			}
-
-			int maxSum = 0;
-			int currentSum = 0;
-
-			foreach (char c in s)
-			{
-				if ("aeiouAEIOU".Contains(c))
-				{
-					maxSum = Math.Max(maxSum, currentSum);
-					currentSum = 0;
-				}
-				else
-				{
-					currentSum += letterValues[c];
-				}
-			}
-
-			// Checks one last time in case the last substring is a consonant substring.
-			maxSum = Math.Max(maxSum, currentSum);
-
-			return maxSum;
+      Dictionary<char, int> letterValues = new Dictionary<char, int>();
+      for (int i = 0; i < 26; i++)
+      {
+	char c = alphabet[i];
+	letterValues[c] = i + 1;
+      }
+	
+      int maxSum = 0;
+      int currentSum = 0;
+	
+      foreach (char c in s)
+      {
+	if ("aeiouAEIOU".Contains(c))
+	{
+	  maxSum = Math.Max(maxSum, currentSum);
+	  currentSum = 0;
+	}
+	else
+	{
+	  currentSum += letterValues[c];
+	}
+       }
+	
+       // Checks one last time in case the last substring is a consonant substring.
+       maxSum = Math.Max(maxSum, currentSum);
+	
+      return maxSum;
     }
 }
 
